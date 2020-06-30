@@ -1,0 +1,14 @@
+.banner {
+    &__image {
+        position: relative;
+        width: 100%;
+    }
+
+    .custom-button {
+        position: absolute;
+        margin: auto;
+        top: 60%;
+        left: 50%;
+        margin-left: -83px;
+    }
+}
