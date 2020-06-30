@@ -1,10 +1,22 @@
 import React from 'react';
 import './App.scss';
+import { Switch, Route } from 'react-router-dom';
+import HomePage from './pages/homepage/homepage';
+import PlayPage from './pages/playpage/playpage';
+import Header from './components/header/header';
 
 function App() {
   return (
     <div className="App">
-        test
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/play" component={PlayPage} />
+          {/* <Route path="/rounds" component={RoundsPage} />
+          <Route path="/statistics" component={StatisticsPage} />
+          <Route path="/profile" component={ProfilePage} />
+          <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/" />) : (<Auth /> )} /> */}
+        </Switch>
     </div>
   );
 }
