@@ -1,0 +1,40 @@
+Golf assist
+
+What
+An app that a golfer can use to:
+- store data of his or her rounds, including putts, strokes, a map etc.
+- store DR (trackman range) and other practice data, like putting drills
+- Upload images / videos to keep track of swing
+- Based on the amount of inputted data, gain tips / drills on how to improve
+- Caddy functionality that uses AR to read greens, give distances to hazards on the course and uses wind to guide you through the course
+
+Why
+- Become a better player by gaining insight on strengths and weaknesses of their game
+- Create a fun, competitive environment for players
+
+How
+- Build a massive CSR application, using react, redux, firebase/node as an MVP
+- Create a native application with react native
+
+Goals
+- Create an MVP: PWA that is hosted and can be used by players to input scores on De Hoge Dijk.
+- The long run: Create a native app and scalable platform that can be used by thousands of golfers to compete against eachother, learn from eachother and commit them to the greatest game: golf.
+
+Ideas
+*My app will need: 
+- Front end environment, using React & Redux
+    - Pages: Landing, Input, Round overview, Round slug, Statistics, profile tab
+    - Components: Statistics CTA, play round CTA, round inputs
+- Firebase server for authentication and setting up a DB
+
+Time indication
+1/7: start
+15/7: eval 1
+1/8: MVP release
+
+50h
+1/7:
+- create react app
+- strip boilerplate
+- setup react-router, react-redux, node-sass
+- setup git

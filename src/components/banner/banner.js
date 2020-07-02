@@ -4,8 +4,7 @@ import CustomButton from '../custom-button/customButton';
 import "./banner.scss";
 
 const Banner = () => (
-    <div className="banner">
-    <img className="banner__image" src={BannerImage} />
+    <div className="banner" style={{backgroundImage: `url(${BannerImage})`}}>
     <CustomButton to="/play">Play golf</CustomButton>
     </div>
 )

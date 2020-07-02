@@ -1,13 +1,13 @@
 .banner {
-    &__image {
-        position: relative;
-        width: 100%;
-    }
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 300px;
 
     .custom-button {
         position: absolute;
         margin: auto;
-        top: 60%;
+        top: 25%;
         left: 50%;
         margin-left: -83px;
     }
