@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.scss';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage';
 import PlayPage from './pages/playpage/playpage';
 import Header from './components/header/header';
+import Auth from './pages/auth/auth';
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
           <Route exact path="/play" component={PlayPage} />
           {/* <Route path="/rounds" component={RoundsPage} />
           <Route path="/statistics" component={StatisticsPage} />
-          <Route path="/profile" component={ProfilePage} />
-          <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/" />) : (<Auth /> )} /> */}
+          <Route path="/profile" component={ProfilePage} /> */}
+          {/* <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/" />) : (<Auth /> )} /> */}
+          <Route exact path="/signin" render={() => <Auth /> } />
+
         </Switch>
     </div>
   );
