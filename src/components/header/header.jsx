@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./header.scss";
 import { ReactComponent as Logo } from '../../assets/dhd.svg'
-import { auth } from 'firebase';
+import { auth } from '../../firebase/firebase.utils';
 
 const Header = ({ currentUser })  => (
     <div className="header">
